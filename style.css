@@ -1,0 +1,406 @@
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+html, body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+body, div, h1, form, input, p { 
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  color: #666;
+}
+
+h1 {
+  padding: 10px 0;
+  font-size: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+p {
+  font-size: 12px;
+}
+
+hr {
+  color: #a9a9a9;
+  opacity: 0.3;
+}
+
+.main-block {
+  max-width: 640px; 
+  min-height: 460px; 
+  padding: 10px 0;
+  margin: auto;
+  border-radius: 5px; 
+  border: solid 1px #ccc;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+  background: #ebebeb; 
+}
+
+form {
+  margin: 0 30px;
+}
+
+.account-type, .gender {
+  margin: 15px 0;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label#icon {
+  margin: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+label.radio {
+  position: relative;
+  display: inline-block;
+  padding-top: 4px;
+  margin-right: 20px;
+  text-indent: 30px;
+  overflow: visible;
+  cursor: pointer;
+}
+
+label.radio:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0693e3;
+}
+
+label.radio:after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 4px;
+  top: 8px;
+  left: 4px;
+  border: 3px solid #fff;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  opacity: 0;
+  }
+  
+  input[type=radio]:checked + label:after {
+    opacity: 1;
+  }
+  
+  input[type=text], input[type=password] {
+    width: calc(100% - 57px);
+    height: 36px;
+    margin: 13px 0 0 -5px;
+    padding-left: 10px; 
+    border-radius: 0 5px 5px 0;
+    border: solid 1px #cbc9c9; 
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    background: #fff; 
+  }
+  
+  input[type=password] {
+    margin-bottom: 15px;
+  }
+  
+  #icon {
+    display: inline-block;
+    padding: 9.3px 15px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    background: #0693e3;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .btn-block {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  button {
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    color: #fff;
+    background: #0693e3;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    float: right;
+    margin: 10px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  button:active {
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  }
+  
+  .form-table {
+    margin: 10px 0;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .form-table td {
+    padding: 10px 0;
+    text-align: left;
+    font-size: 14px;
+    border: none;
+  }
+  
+  .form-table td.label {
+    text-align: right;
+    padding-right: 10px;
+    width: 30%;
+    font-weight: bold;
+  }
+  
+  .form-table td.input {
+    width: 70%;
+  }
+  
+  .form-table td input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin: 10px 0;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    background: #fff;
+  }
+  
+  .form-table td input[type=date] {
+    width: 70%;
+    height: 36px;
+    margin: 10px 0;
+    padding-left: 10px; 
+    border-radius: 5px;
+    border: solid 1px #cbc9c9; 
+    box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+    background: #fff;
+  }
+  
+/* Styles for the results table */
+table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #ddd;
+  font-weight: bold;
+}
+table.results-table {
+  border-collapse: collapse;
+  width: 100%;
+  height:500px;
+}
+
+table.results-table td, table.results-table th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+table.results-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table.results-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+.wide-table {
+  width: 1000px;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.wide-table td,
+.wide-table th {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+/* Style the seller info container */
+.seller-info {
+  float: left;
+  width: 30%;
+  margin: 10px;
+  margin-bottom: 1em;
+}
+
+/* Style the buttons container */
+.buttons-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+
+/* Style the buttons */
+.buttons button {
+  display: inline-block;
+  margin-top: 50px;
+  margin: 10px;
+}
+/* Style the results table */
+.results-table {
+  margin-left: 60px;
+  width: 75%;
+  border-collapse: collapse;
+  display: block;
+  margin-top: 80px;
+  
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.results-container {
+  margin-top: 80px; /* or any other value to leave enough space for the buttons */
+}
+.results-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.results-table td,
+.results-table th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+.results-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+@media print {
+  button {
+    display: none;
+  }
+}
+/* Make the page elements flexible on small screens */
+@media only screen and (max-width: 600px) {
+  .page-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Center the buttons on small screens */
+@media only screen and (max-width: 600px) {
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Style the buttons on small screens */
+@media only screen and (max-width: 600px) {
+  .buttons-container button {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the results table on small screens */
+@media only screen and (max-width: 600px) {
+  .results-table th {
+    font-size: 12px; /* reduce the font size of the table headings */
+  }
+  .results-table td {
+    font-size: 16px; /* increase the font size of the table cells */
+  }
+}
+
+/* Style the logo on small screens */
+@media only screen and (max-width: 600px) {
+  img {
+    width: 60%;
+    height:60%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Make the results table flexible on small screens */
+@media only screen and (max-width: 600px) {
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+}
+
+/* Center the results table on small screens */
+@media only screen and (max-width: 600px) {
+  .results-table {
+    overflow-x: auto;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 14px;
+    float: center;
+  }
+}
+
+/* Style the table cells on small screens */
+@media only screen and (max-width: 600px) {
+  .results-table td, .results-table th {
+    width: 30px;
+  }
+}
+
+/* Style the table cells on medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .results-table td, .results-table th {
+    width: 60px;
+  }
+}
+

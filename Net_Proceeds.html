@@ -1,0 +1,154 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Net Proceds App)</title>
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+      
+        
+        <div class="container">
+            <div class="main-block">
+                <img src='https://boomtown-production-consumer-backup.s3.amazonaws.com/1298/files/2021/09/hp.png' alt='Business Logo' width='500' height='180'>
+                <form action="calculate_net_proceeds.php" method="post">
+                  <table class="form-table" cellpadding>
+                      <tr>
+                          <td>
+                              <label for="seller_name" class="label">Seller's Name:</label>
+                          </td>
+                          <td>
+                              <input type="text" name="seller_name" id="seller_name" class="input">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <label for="property_address" class="label">Property Address:</label>
+                          </td>
+                          <td>
+                              <input type="text" name="property_address" id="property_address" class="input">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <label for="zip_code" class="label">Zip Code:</label>
+                          </td>
+                          <td>
+                              <input type="text" name="zip_code" id="zip_code" class="input">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <label for="closing_date" class="label">Closing Date:</label>
+                          </td>
+                          <td>
+                              <input type="date" name="closing_date" id="closing_date" class="input">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <label for="commission_percent" class="label">Commission Percent:</label>
+                          </td>
+                          <td>
+                              <input type="number" name="commission_percent" id="commission_percent" value="6" class="input">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <label for="property_taxes" class="label">Property Taxes:</label>
+                          </td>
+                          <td>
+                              <input type="number" name="property_taxes" id="property_taxes" class="input">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <label for="first_installment_paid" class="label">First Installment Paid:</label>
+                          </td>
+                          <td>
+                              <input type="checkbox" name="first_installment_paid" id="first_installment_paid" class="input">
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <label for="second_installment_paid" class="label">Second Installment Paid:</label>
+                          </td>
+                          <td>
+                              <input type="checkbox" name="second_installment_paid" id="second_installment_paid" class="input">
+                          </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="current_mortgage_balance" class="label">Current Mortgage Balance:</label>
+                            </td>
+                            <td>
+                                <input type="number" name="current_mortgage_balance" id="current_mortgage_balance" class="input">
+                            </td>
+                        </tr>
+                        <tr><br>
+                            <td colspan="2">Miscellaneous Fees (Name/Value):</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="misc_fees1" placeholder="Ex: Inspection" class="input">
+                            </td>
+                            <td>
+                                <input type="number" name="misc_fees2" placeholder="Ex: 350" class="input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" name="misc_fees3" placeholder="Ex: Appraisal" class="input">
+                            </td>
+                            <td>
+                                <input type="number" name="misc_fees4" placeholder="Ex: 450" class="input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><br>Enter sales price:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="sales_price_1" class="label">Sale Price 1:</label>
+                            </td>
+                            <td>
+                                <input type="number" name="sales_price_1" id="sales_price_1" class="input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="sales_price_2" class="label">Sale Price 2:</label>
+                            </td>
+                            <td>
+                                <input type="number" name="sales_price_2" id="sales_price_2" class="input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="sales_price_3" class="label">Sale Price 3:</label>
+                            </td>
+                            <td>
+                                <input type="number" name="sales_price_3" id="sales_price_3" class="input">
+                            </td>
+                        </tr>
+                        <tr><br>
+                            <td colspan="2" align="center">
+                                <button type="submit" class="submit">Calculate Net Proceeds</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                
+                   
+        </div>
+        
+        
+      
+    
+
+
+        
+    </body>
+
+</html>
